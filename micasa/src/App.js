@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Button from 'react-bootstrap/Button'
-import Login from "./containers/Login";
+import {Link } from "react-router-dom";
 
 function App() {
   return (
@@ -12,9 +12,11 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <div className="d-grid gap-2">
+          <Link to="/login">
           <Button variant="secondary" size="lg">
-            Block level button
+            Go To Login
           </Button>
+          </Link>
         </div>
       </header>
     </div>
